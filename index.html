@@ -219,7 +219,7 @@ const arquivos = [
 ];
 const grupos = { "Bastão": [], "Cursiva": [] };
 async function carregar(){
-  const files = arquivos.map(n=>({nome:n, url: REPO + '/' + encodeURIComponent(n)}));
+  const files = arquivos.map(n=>({nome:n, url: REPO + '/' + n}));
   const lista = document.getElementById('lista');
   if(!files.length){
     lista.innerHTML = '<div style="text-align:center;color:#b5658a;background:#fff;padding:18px;border-radius:16px;">Nenhum PDF encontrado. Verifique a pasta C:\\Users\\Bruno\\Downloads\\pdfs 😊</div>';
@@ -227,7 +227,7 @@ async function carregar(){
   }
   files.forEach(f=>{
     const nome = f.nome || f;
-    const url = f.url || REPO + '/' + encodeURIComponent(nome);
+    const url = f.url || REPO + '/' + nome;
     const card = `
       <div class="pdf-card">
         <div class="top">
