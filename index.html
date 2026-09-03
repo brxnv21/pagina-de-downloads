@@ -204,6 +204,7 @@ h3.sec small{ display:block; font-family:'Nunito',sans-serif; font-size:12px; fo
 </div>
 
 <script>
+const REPO = 'https://raw.githubusercontent.com/brxnv21/pagina-de-downloads/main/pdfs';
 const arquivos = [
   "01. Caderno de Atividades - Nivel 1 - Bastão.pdf",
   "02. Caderno de Atividades - Nivel 2 - Bastão - Parte 1.pdf",
@@ -218,7 +219,7 @@ const arquivos = [
 ];
 const grupos = { "Bastão": [], "Cursiva": [] };
 async function carregar(){
-  const files = arquivos.map(n=>({nome:n, url:'pdfs/'+encodeURIComponent(n)}));
+  const files = arquivos.map(n=>({nome:n, url: REPO + '/' + encodeURIComponent(n)}));
   const lista = document.getElementById('lista');
   if(!files.length){
     lista.innerHTML = '<div style="text-align:center;color:#b5658a;background:#fff;padding:18px;border-radius:16px;">Nenhum PDF encontrado. Verifique a pasta C:\\Users\\Bruno\\Downloads\\pdfs 😊</div>';
@@ -226,7 +227,7 @@ async function carregar(){
   }
   files.forEach(f=>{
     const nome = f.nome || f;
-    const url = f.url || '/pdfs/'+encodeURIComponent(nome);
+    const url = f.url || REPO + '/' + encodeURIComponent(nome);
     const card = `
       <div class="pdf-card">
         <div class="top">
@@ -236,7 +237,7 @@ async function carregar(){
             <div class="meta">PDF • pronto para imprimir ✨</div>
           </div>
         </div>
-        <a class="btn" href="${url}" download>⬇️ Baixar</a>
+        <a class="btn" href="${url}" target="_blank">⬇️ Baixar</a>
       </div>`;
     if(nome.toLowerCase().includes('cursiva')) grupos["Cursiva"].push(card);
     else grupos["Bastão"].push(card);
