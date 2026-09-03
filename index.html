@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obrigado! 💜 Seu Kit Grafismo Fonético chegou ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1683296229241223');
+fbq('track', 'PageView');
+const params = new URLSearchParams(window.location.search);
+const valor = params.get('valor') || '9.90';
+fbq('track', 'Purchase', {value: parseFloat(valor), currency: 'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1683296229241223&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden}
+body{
+  font-family:'Nunito',system-ui,sans-serif;
+  background:#fff0f6;
+  color:#4a2545;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+/* MOBILE FIRST */
+.hero{
+  background: linear-gradient(135deg, #ffc8dd 0%, #ffafcc 45%, #ffc8dd 100%);
+  padding: 28px 16px 40px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:'✨ 📚 ✨ 🎨 ✨';
+  position:absolute; top:8px; left:50%; transform:translateX(-50%);
+  font-size:11px; letter-spacing:4px; opacity:.7; white-space:nowrap;
+}
+.hero h1{
+  font-family:'Baloo 2',cursive;
+  font-size: clamp(26px, 7vw, 38px);
+  line-height:1.1;
+  color:#7b2d5a;
+  margin:12px 0 8px;
+}
+.hero h1 span{ color:#d63384; }
+.hero p.sub{
+  max-width:620px; margin:10px auto 0;
+  font-size:15px; line-height:1.5; color:#6b2a4b;
+  background: rgba(255,255,255,.82);
+  padding:12px 14px; border-radius:16px;
+}
+.badge{
+  display:inline-block; background:#fff; color:#d63384;
+  padding:6px 12px; border-radius:999px; font-weight:800; font-size:12px;
+  box-shadow:0 4px 14px rgba(214,51,132,.15);
+}
+.wrap{ max-width:960px; margin:-16px auto 32px; padding:0 14px; }
+.card-intro{
+  background:#fff; border-radius:20px; padding:18px 16px;
+  box-shadow:0 10px 30px rgba(214,51,132,.12);
+  border:2px solid #ffd6e7;
+  text-align:center;
+}
+.card-intro h2{ font-family:'Baloo 2',cursive; font-size:19px; color:#7b2d5a; line-height:1.3; }
+.card-intro p{ font-size:14px; line-height:1.6; color:#6b2a4b; margin-top:8px; }
+.steps{
+  display:grid; grid-template-columns: 1fr;
+  gap:12px; margin-top:16px;
+}
+.step{
+  background:#fff0f6; border:1.5px dashed #ffb3d1;
+  border-radius:16px; padding:14px; text-align:center;
+}
+.step .ico{ font-size:24px; }
+.step b{ display:block; margin-top:6px; font-size:14px; color:#7b2d5a; }
+.step span{ font-size:12px; color:#8a4a6b; }
+
+h3.sec{
+  font-family:'Baloo 2',cursive; font-size:21px; color:#7b2d5a;
+  text-align:center; margin:28px 0 14px; line-height:1.2;
+}
+h3.sec small{ display:block; font-family:'Nunito',sans-serif; font-size:12px; font-weight:600; color:#b5658a; margin-top:4px; }
+
+.grid{
+  display:grid; grid-template-columns: 1fr;
+  gap:12px;
+}
+.pdf-card{
+  background:#fff; border-radius:16px; padding:14px;
+  border:2px solid #ffe0ec;
+  box-shadow:0 6px 18px rgba(214,51,132,.08);
+  display:flex; flex-direction:column; gap:10px;
+}
+.pdf-card .top{ display:flex; gap:10px; align-items:center; min-width:0; }
+.pdf-card .thumb{
+  width:40px; height:40px; border-radius:12px;
+  background: linear-gradient(135deg,#ffafcc,#ffc8dd);
+  display:grid; place-items:center; font-size:20px; flex-shrink:0;
+}
+.pdf-card .nome{ font-weight:700; font-size:13px; line-height:1.3; color:#5a2447; word-break:break-word; }
+.pdf-card .meta{ font-size:11px; color:#b5658a; }
+.pdf-card a.btn{
+  display:block; text-align:center; text-decoration:none;
+  background:#d63384; color:#fff; font-weight:800; font-size:14px;
+  padding:12px 14px; border-radius:12px;
+  box-shadow:0 4px 12px rgba(214,51,132,.25);
+  width:100%;
+}
+.grupo{ margin-top:8px; }
+.grupo h4{
+  font-family:'Baloo 2',cursive; font-size:16px; color:#7b2d5a;
+  margin:20px 0 10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+}
+.grupo h4 span.tag{
+  font-family:'Nunito',sans-serif; font-size:11px; background:#ffe0ec; color:#d63384;
+  padding:4px 8px; border-radius:999px; font-weight:800;
+}
+.dica{
+  background: linear-gradient(135deg,#fff,#fff0f6);
+  border:2px solid #ffd6e7; border-radius:18px; padding:16px;
+  margin-top:22px; text-align:center;
+}
+.dica p{ font-size:13px; line-height:1.6; color:#6b2a4b; }
+.wa{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  background:#25d366; color:#fff; text-decoration:none;
+  padding:12px 18px; border-radius:999px; font-weight:800; font-size:14px;
+  margin-top:12px; box-shadow:0 6px 16px rgba(37,211,102,.3);
+  width:100%; max-width:320px;
+}
+.footer{ text-align:center; padding:24px 14px 36px; font-size:11px; line-height:1.5; color:#b5658a; }
+
+/* TABLET+ */
+@media (min-width: 600px){
+  .hero{ padding: 36px 20px 52px; }
+  .hero p.sub{ font-size:16px; padding:12px 16px; }
+  .card-intro{ padding:24px; }
+  .card-intro h2{ font-size:22px; }
+  .steps{ grid-template-columns: repeat(3, 1fr); }
+  .grid{ grid-template-columns: repeat(2, 1fr); }
+  .wa{ width:auto; }
+}
+@media (min-width: 900px){
+  .grid{ grid-template-columns: repeat(2, 1fr); }
+  .wrap{ padding:0 18px; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="badge">🎉 Pagamento confirmado</div>
+  <h1>Obrigado por confiar! <span>💜</span></h1>
+  <p class="sub">
+    Seu <b>Kit Grafismo Fonético</b> já está prontinho para você, mamãe, papai ou professora ✨<br>
+    São <b>10 cadernos em PDF</b> feitos com muito carinho para tornar a alfabetização leve, divertida e cheia de descobertas — para imprimir e usar em casa ou na sala de aula, no seu tempo 💌
+  </p>
+</section>
+
+<div class="wrap">
+
+  <div class="card-intro">
+    <h2>Você fez uma escolha linda 📚💜</h2>
+    <p>
+      Eu sei como é querer ajudar e não saber por onde começar… 😊<br>
+      Esse kit foi pensado justamente para <b>você</b> — mamãe, papai ou professora — que quer acompanhar de pertinho, com atividades prontas, lúdicas e no ritmo da criança. Sem pressão, sem correria. Só você e seu pequeno(a), lápis de cor e muitos momentos fofos juntos 🖍️✨
+    </p>
+    <div class="steps">
+      <div class="step"><div class="ico">🖨️</div><b>1. Baixe</b><span>clique e salve no celular ou computador</span></div>
+      <div class="step"><div class="ico">🖍️</div><b>2. Imprima</b><span>no seu tempo, quantas vezes quiser</span></div>
+      <div class="step"><div class="ico">👶</div><b>3. Brinquem</b><span>5 a 15 minutinhos por dia já fazem magia ✨</span></div>
+    </div>
+  </div>
+
+  <h3 class="sec">Seus 10 cadernos 📖 <small>toque em Baixar — é seu para sempre 💜</small></h3>
+
+  <div id="lista"></div>
+
+  <div class="dica">
+    <p>
+      💡 <b>Dica de ouro do tio Bruno:</b> comece pelo <b>Nível 1</b> e vá avançando no ritmo do seu pequeno(a).<br>
+      Comemore cada traçado, cada letrinha — isso cria confiança e amor por aprender 🌟
+    </p>
+    <a class="wa" href="https://wa.me/5527996115482?text=Oi%20Bruno%20💜%20Recebi%20meu%20Kit%20Grafismo%20Fonetico!" target="_blank">💬 Falar com o tio Bruno no WhatsApp</a>
+    <p style="margin-top:10px;font-size:12px;color:#b5658a;">Dúvida na impressão? Me chama que eu te ajudo com carinho 😊</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  Kit Grafismo Fonético © com carinho do tio Bruno — especialista em alfabetização infantil em casa e na escola 💌<br>
+  Material digital em PDF • Acesso imediato • Imprima quantas vezes quiser 🖨️
+</div>
+
+<script>
+const arquivos = [
+  "01. Caderno de Atividades - Nivel 1 - Bastão.pdf",
+  "02. Caderno de Atividades - Nivel 2 - Bastão - Parte 1.pdf",
+  "03. Caderno de Atividades - Nivel 2 - Bastão - Parte 2.pdf",
+  "04. Caderno de Atividades - Nivel 3 - Bastão - Parte 1.pdf",
+  "05. Caderno de Atividades - Nivel 3 - Bastão - Parte 2.pdf",
+  "06. Caderno de Atividades - Nivel 1 - Letra Cursiva.pdf",
+  "07. Caderno de Atividades - Nivel 2 - Letra Cursiva - Parte 1.pdf",
+  "08. Caderno de Atividades - Nivel 2 - Letra Cursiva - Parte 2.pdf",
+  "09. Caderno de Atividades - Nivel 3 - Letra Cursiva - Parte 1.pdf",
+  "10. Caderno de Atividades - Nivel 3 - Letra Cursiva - Parte 2.pdf"
+];
+const grupos = { "Bastão": [], "Cursiva": [] };
+async function carregar(){
+  const files = arquivos.map(n=>({nome:n, url:'pdfs/'+encodeURIComponent(n)}));
+  const lista = document.getElementById('lista');
+  if(!files.length){
+    lista.innerHTML = '<div style="text-align:center;color:#b5658a;background:#fff;padding:18px;border-radius:16px;">Nenhum PDF encontrado. Verifique a pasta C:\\Users\\Bruno\\Downloads\\pdfs 😊</div>';
+    return;
+  }
+  files.forEach(f=>{
+    const nome = f.nome || f;
+    const url = f.url || '/pdfs/'+encodeURIComponent(nome);
+    const card = `
+      <div class="pdf-card">
+        <div class="top">
+          <div class="thumb">📄</div>
+          <div style="min-width:0">
+            <div class="nome">${escapeHtml(nome.replace('.pdf',''))}</div>
+            <div class="meta">PDF • pronto para imprimir ✨</div>
+          </div>
+        </div>
+        <a class="btn" href="${url}" download>⬇️ Baixar</a>
+      </div>`;
+    if(nome.toLowerCase().includes('cursiva')) grupos["Cursiva"].push(card);
+    else grupos["Bastão"].push(card);
+  });
+  let html = '';
+  if(grupos["Bastão"].length){
+    html += '<div class="grupo"><h4>✏️ Letra Bastão <span class="tag">5 cadernos</span></h4><div class="grid">'+grupos["Bastão"].join('')+'</div></div>';
+  }
+  if(grupos["Cursiva"].length){
+    html += '<div class="grupo"><h4>🖋️ Letra Cursiva <span class="tag">5 cadernos</span></h4><div class="grid">'+grupos["Cursiva"].join('')+'</div></div>';
+  }
+  lista.innerHTML = html;
+}
+function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+carregar();
+</script>
+</body>
+</html>
