@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kit Alfabetização Completo - 16 Materiais por R$16 💜</title>
+<title>Obrigado! 💜 Baixe seus 16 materiais ✨</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
 <!-- Meta Pixel Code -->
 <script>
@@ -17,6 +17,9 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1683296229241223');
 fbq('track', 'PageView');
+const params = new URLSearchParams(window.location.search);
+const valor = params.get('valor') || '16';
+fbq('track', 'Purchase', {value: parseFloat(valor), currency: 'BRL'});
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1683296229241223&ev=PageView&noscript=1" /></noscript>
 <!-- End Meta Pixel Code -->
@@ -57,52 +60,24 @@ body{
   padding:12px 14px; border-radius:16px;
 }
 .badge{
-  display:inline-block; background:#d63384; color:#fff;
+  display:inline-block; background:#25d366; color:#fff;
   padding:6px 12px; border-radius:999px; font-weight:800; font-size:12px;
-  box-shadow:0 4px 14px rgba(214,51,132,.15);
+  box-shadow:0 4px 14px rgba(37,211,102,.15);
 }
 .wrap{ max-width:960px; margin:-16px auto 32px; padding:0 14px; }
 
-.offer-card{
-  background:#fff; border-radius:20px; padding:24px 16px;
+.card{
+  background:#fff; border-radius:20px; padding:18px 16px;
   box-shadow:0 10px 30px rgba(214,51,132,.12);
-  border:3px solid #d63384;
+  border:2px solid #ffd6e7;
   text-align:center;
 }
-.offer-card h2{ font-family:'Baloo 2',cursive; font-size:22px; color:#7b2d5a; line-height:1.3; }
-.offer-card .price-box{
-  background: linear-gradient(135deg, #fff0f6, #ffe0ec);
-  border-radius:16px; padding:16px; margin:16px 0;
-}
-.offer-card .price-old{
-  font-size:16px; color:#999; text-decoration:line-through;
-}
-.offer-card .price{
-  font-size:42px; font-weight:800; color:#d63384;
-  font-family:'Baloo 2',cursive;
-}
-.offer-card .price small{
-  font-size:18px; color:#6b2a4b;
-}
-.offer-card .price-sub{
-  font-size:14px; color:#6b2a4b; margin-top:4px;
-}
-.offer-card .price-sub b{ color:#d63384; }
-
-.materiais{
-  display:grid; grid-template-columns: repeat(2, 1fr);
-  gap:8px; margin:16px 0; text-align:left;
-}
-.material-item{
-  background:#fff0f6; border-radius:10px; padding:10px 12px;
-  font-size:12px; color:#6b2a4b; border:1px solid #ffd6e7;
-  display:flex; align-items:center; gap:8px;
-}
-.material-item .ico{ font-size:16px; }
+.card h2{ font-family:'Baloo 2',cursive; font-size:19px; color:#7b2d5a; line-height:1.3; }
+.card p{ font-size:14px; line-height:1.6; color:#6b2a4b; margin-top:8px; }
 
 .steps{
   display:grid; grid-template-columns: 1fr;
-  gap:12px; margin-top:20px;
+  gap:12px; margin-top:16px;
 }
 .step{
   background:#fff0f6; border:1.5px dashed #ffb3d1;
@@ -112,17 +87,12 @@ body{
 .step b{ display:block; margin-top:6px; font-size:14px; color:#7b2d5a; }
 .step span{ font-size:12px; color:#8a4a6b; }
 
-.wa{
+.btn-drive{
   display:inline-flex; align-items:center; justify-content:center; gap:8px;
-  background:#25d366; color:#fff; text-decoration:none;
-  padding:16px 24px; border-radius:999px; font-weight:800; font-size:16px;
-  margin-top:20px; box-shadow:0 6px 16px rgba(37,211,102,.3);
+  background:#d63384; color:#fff; text-decoration:none;
+  padding:14px 24px; border-radius:999px; font-weight:800; font-size:16px;
+  margin-top:16px; box-shadow:0 6px 16px rgba(214,51,132,.3);
   width:100%; max-width:320px;
-  animation: pulse 2s infinite;
-}
-@keyframes pulse{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.03)}
 }
 
 .dica{
@@ -131,81 +101,60 @@ body{
   margin-top:22px; text-align:center;
 }
 .dica p{ font-size:13px; line-height:1.6; color:#6b2a4b; }
-
-.garantia{
-  background:#f0fff4; border:2px solid #25d366; border-radius:16px;
-  padding:16px; margin-top:20px; text-align:center;
+.wa{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  background:#25d366; color:#fff; text-decoration:none;
+  padding:12px 18px; border-radius:999px; font-weight:800; font-size:14px;
+  margin-top:12px; box-shadow:0 6px 16px rgba(37,211,102,.3);
+  width:100%; max-width:320px;
 }
-.garantia h3{ font-size:16px; color:#128c7e; margin-bottom:8px; }
-.garantia p{ font-size:13px; color:#666; }
-
 .footer{ text-align:center; padding:24px 14px 36px; font-size:11px; line-height:1.5; color:#b5658a; }
 
 @media (min-width: 600px){
   .hero{ padding: 36px 20px 52px; }
   .hero p.sub{ font-size:16px; padding:12px 16px; }
-  .offer-card{ padding:32px; }
-  .materiais{ grid-template-columns: repeat(4, 1fr); }
+  .card{ padding:24px; }
   .steps{ grid-template-columns: repeat(3, 1fr); }
-  .wa{ width:auto; }
+  .btn-drive, .wa{ width:auto; }
 }
 </style>
 </head>
 <body>
 
 <section class="hero">
-  <div class="badge">🔥 OFERTA ESPECIAL</div>
-  <h1>Kit Alfabetização <span>Completo</span> 💜</h1>
+  <div class="badge">✅ Pagamento confirmado</div>
+  <h1>Obrigado por confiar! <span>💜</span></h1>
   <p class="sub">
-    <b>16 materiais digitais em PDF</b> para acompanhar a criança desde os primeiros traçados até a leitura! ✨<br>
-    <b>R$1 por material</b> — preço de custo, pensado para todas as famílias 💌
+    Seu <b>Kit Alfabetização Completo</b> já está prontinho! ✨<br>
+    São <b>16 materiais digitais em PDF</b> feitos com muito carinho 💌
   </p>
 </section>
 
 <div class="wrap">
 
-  <div class="offer-card">
-    <h2>O que você vai receber 📚</h2>
+  <div class="card">
+    <h2>📚 Baixe seus 16 materiais</h2>
+    <p>
+      Clique no botão abaixo para acessar sua pasta no Google Drive.<br>
+      Lá você encontra todos os materiais prontos para baixar e imprimir! 🖍️✨
+    </p>
     
-    <div class="price-box">
-      <div class="price-old">De R$47,00</div>
-      <div class="price">R$16 <small>pagamento único</small></div>
-      <div class="price-sub">Só <b>R$1 por material</b>! Preço de custo 💜</div>
+    <div class="steps">
+      <div class="step"><div class="ico">1️⃣</div><b>Clique</b><span>no botão rosa abaixo</span></div>
+      <div class="step"><div class="ico">2️⃣</div><b>Baixe</b><span>salve no seu celular ou PC</span></div>
+      <div class="step"><div class="ico">3️⃣</div><b>Imprima</b><span>quantas vezes quiser!</span></div>
     </div>
 
-    <div class="materiais">
-      <div class="material-item"><span class="ico">✏️</span>Grafismo e coordenação motora</div>
-      <div class="material-item"><span class="ico">🔤</span>Alfabeto e reconhecimento de letras</div>
-      <div class="material-item"><span class="ico">📝</span>Vogais e escrita cursiva</div>
-      <div class="material-item"><span class="ico">📖</span>Sílabas simples e formação de palavras</div>
-      <div class="material-item"><span class="ico">📚</span>Leitura e interpretação de textos</div>
-      <div class="material-item"><span class="ico">🎨</span>Atividades lúdicas e divertidas</div>
-      <div class="material-item"><span class="ico">🖨️</span>Imprima quantas vezes quiser</div>
-      <div class="material-item"><span class="ico">⚡</span>Acesso imediato após pagamento</div>
-    </div>
-  </div>
-
-  <div class="steps">
-    <div class="step"><div class="ico">1️⃣</div><b>Clique</b><span>no botão verde abaixo</span></div>
-    <div class="step"><div class="ico">2️⃣</div><b>Fale</b><span>com o tio Bruno no Zap</span></div>
-    <div class="step"><div class="ico">3️⃣</div><b>Receba</b><span>os 16 materiais na hora!</span></div>
-  </div>
-
-  <div style="text-align:center;">
-    <a class="wa" href="https://wa.me/5527996115482?text=Oi%20Bruno%20💜%20Quero%20comprar%20o%20Kit%20Alfabetização%20Completo%20por%20R%2416!" target="_blank">
-      💬 COMPRAR PELO WHATSAPP
-    </a>
-  </div>
-
-  <div class="garantia">
-    <h3>✅ Garantia de 7 dias</h3>
-    <p>Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+    <a class="btn-drive" href="https://drive.google.com/drive/folders/1HRpRCWqYXZlAoSaub-D8Jwo4ss8mvuAr?hl=pt-br" target="_blank">📁 BAIXAR MEUS 16 MATERIAIS</a>
   </div>
 
   <div class="dica">
     <p>
-      💡 <b>Dica:</b> depois de pagar pelo Zap, clique no botão "Já paguei" para receber seus materiais! 🌟
+      💡 <b>Dica do tio Bruno:</b> comece pelo <b>Grafismo</b> e vá avançando no ritmo do seu pequeno(a).<br>
+      Comemore cada traçado, cada letrinha — isso cria confiança e amor por aprender 🌟
     </p>
+    <a class="wa" href="https://wa.me/5527996115482?text=Oi%20Bruno%20💜%20Recebi%20meu%20Kit%20Alfabetização!" target="_blank">💬 Falar com o tio Bruno no WhatsApp</a>
+    <p style="margin-top:10px;font-size:12px;color:#b5658a;">Dúvida no download? Me chama que eu te ajudo com carinho 😊</p>
   </div>
 
 </div>
