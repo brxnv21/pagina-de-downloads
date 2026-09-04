@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Obrigado! 💜 Seu Kit Alfabetização Completo chegou ✨</title>
+<title>Obrigado! 💜 Seu Kit + Bônus Exclusivo chegaram ✨</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
 <!-- Meta Pixel Code -->
 <script>
@@ -18,7 +18,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1683296229241223');
 fbq('track', 'PageView');
 const params = new URLSearchParams(window.location.search);
-const valor = params.get('valor') || '16';
+const valor = params.get('valor') || '25.90';
 fbq('track', 'Purchase', {value: parseFloat(valor), currency: 'BRL'});
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1683296229241223&ev=PageView&noscript=1" /></noscript>
@@ -105,7 +105,61 @@ body{
   margin-top:16px; box-shadow:0 6px 16px rgba(214,51,132,.3);
   width:100%; max-width:320px;
 }
+.btn-upsell{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  background:#ff6b6b; color:#fff; text-decoration:none;
+  padding:14px 24px; border-radius:999px; font-weight:800; font-size:16px;
+  margin-top:16px; box-shadow:0 6px 16px rgba(255,107,107,.3);
+  width:100%; max-width:320px;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.03)}
+}
 .footer{ text-align:center; padding:24px 14px 36px; font-size:11px; line-height:1.5; color:#b5658a; }
+
+.upsell-section{
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
+  border:3px solid #ff6b6b;
+  border-radius:20px;
+  padding:20px 16px;
+  margin-top:24px;
+  text-align:center;
+}
+.upsell-section h2{
+  font-family:'Baloo 2',cursive;
+  font-size:22px;
+  color:#d63384;
+  margin-bottom:8px;
+}
+.upsell-section .price{
+  font-size:28px;
+  font-weight:800;
+  color:#ff6b6b;
+  margin:8px 0;
+}
+.upsell-section .price small{
+  font-size:14px;
+  color:#888;
+  text-decoration:line-through;
+}
+.upsell-temas{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:8px;
+  margin:16px 0;
+}
+.tema-item{
+  background:#fff;
+  border-radius:12px;
+  padding:10px 8px;
+  font-size:13px;
+  font-weight:600;
+  color:#7b2d5a;
+  border:1px solid #ffd6e7;
+}
+.tema-item .ico{ font-size:18px; display:block; margin-bottom:4px; }
 
 @media (min-width: 600px){
   .hero{ padding: 36px 20px 52px; }
@@ -113,7 +167,8 @@ body{
   .card-intro{ padding:24px; }
   .card-intro h2{ font-size:22px; }
   .steps{ grid-template-columns: repeat(3, 1fr); }
-  .wa, .btn-drive{ width:auto; }
+  .wa, .btn-drive, .btn-upsell{ width:auto; }
+  .upsell-temas{ grid-template-columns: repeat(4, 1fr); }
 }
 </style>
 </head>
@@ -144,6 +199,26 @@ body{
   </div>
 
   <a class="btn-drive" href="https://drive.google.com/drive/folders/1HRpRCWqYXZlAoSaub-D8Jwo4ss8mvuAr?hl=pt-br" target="_blank">📁 Acessar Meus 16 Materiais</a>
+
+  <!-- UPSELL -->
+  <div class="upsell-section">
+    <h2>🎁 QUEBRA-CASTIGO EXCLUSIVO!</h2>
+    <p style="font-size:14px;color:#6b2a4b;">Leve também o <b>Pacote Bobbie Goods</b> com 7 temas para colorir!</p>
+    <div class="price">R$9,90 <small>R$19,90</small></div>
+    
+    <div class="upsell-temas">
+      <div class="tema-item"><span class="ico">🐕</span>Patrulha Canina</div>
+      <div class="tema-item"><span class="ico">🐱</span>Hello Kitty</div>
+      <div class="tema-item"><span class="ico">🌺</span>Lilo e Stitch</div>
+      <div class="tema-item"><span class="ico">🦄</span>Unicórnio</div>
+      <div class="tema-item"><span class="ico">🦕</span>Dinossauro</div>
+      <div class="tema-item"><span class="ico">🚀</span>Space</div>
+      <div class="tema-item"><span class="ico">👑</span>Princesa</div>
+    </div>
+
+    <a class="btn-upsell" href="https://drive.google.com/drive/folders/1wEjZcJcnsu-8y1thxawgzmubWicKcFkb?hl=pt-br" target="_blank">🎨 QUERO O BONUS TB!</a>
+    <p style="font-size:11px;color:#888;margin-top:8px;">É um presente para seu filho(a) colorir e se divertir ainda mais! 💜</p>
+  </div>
 
   <div class="dica">
     <p>
